@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ex3</title>
+</head>
+<style>
+    #info label {
+        display: inline-block;
+        clear: left;
+        width: 20%;
+    }
+
+    #info input,
+    select {
+        display: inline-block;
+        margin-bottom: 12px;
+    }
+
+    #info input {
+        width: 75%;
+    }
+
+    #info select {
+        width: 76%;
+    }
+
+    #transporte,
+    #cor {
+        width: 46%;
+    }
+
+    #transporte {
+        float: left;
+    }
+
+    #cor {
+        float: right;
+    }
+
+    body {
+        width: 70%;
+        margin: auto;
+    }
+
+    .clearfix {
+        overflow: auto;
+    }
+
+    #control-panel {
+        padding-top: 2em;
+        text-align: center;
+    }
+
+    #control-panel input{
+        font-size: 15px;
+    }
+
+    textarea {
+        width: 100%
+    }
+</style>
+
+
+<body>
+    <form name="PersonData" action="http://192.168.160.36/FormEcho.aspx" method="POST">
+        <fieldset id="info">
+            <legend>Informação Pessoal</legend>
+
+            <label>Curso:</label>
+
+            <select name="Curso">
+                <option value="1">Licenciatura em Engenharia Informática</option>
+                <option value="2">Mestrado Integrado em Engenharia de Computadores e Telemática</option>
+                <option value="3">Mestrado Integrade em Engenharia Eletrónica e Telecomunincações</option>
+            </select><br>
+
+            <label>Nome:</label>
+            <input type="text" name="FirstName" value="Joaquim" placeholder="Nome" /><br>
+
+            <label>Sobrenome: </label>
+            <input type="text" name="LastName" placeholder="Sobrenome" /><br>
+
+            <label>Palavra-Passe: </label>
+            <input type="password" name="Password" placeholder="Digite a palavra-passe" /><br>
+        </fieldset>
+
+
+        <!--Comentários-->
+        <fieldset>
+            <legend>Comentários:</legend>
+            <textarea name="Comments" rows="4" cols="80" placeholder="Insira os seus comentários"></textarea>
+        </fieldset>
+
+
+        <!--linha-->
+        <div class="clearfix">
+            <fieldset id="transporte">
+                <legend>Meios de Transporte</legend>
+                <input type="checkbox" id="bicicleta" name="vehicle" value="Bicicleta">
+                <label>Bicicleta</label><br>
+                <input type="checkbox" id="Carro" name="vehicle" value="Carro">
+                <label>Carro</label><br>
+                <input type="checkbox" id="Comboio" name="vehicle" value="Comboio">
+                <label>Comboio</label>
+            </fieldset>
+
+            
+            <fieldset id="cor">
+                <legend>Cor Preferida</legend>
+
+                <input type="radio" id="azul" name="color" value="Azul">
+                <label for="azul">Azul</label><br>
+                <input type="radio" id="verde" name="color" value="Verde">
+                <label for="verde">Verde</label><br>
+                <input type="radio" id="vermelho" name="color" value="Vermelho">
+                <label for="vermelho">vermelho</label><br>
+                <input type="radio" id="outra" name="color" value="Outra">
+                <label for="outra">Outra</label>
+            </fieldset>
+        </div>
+        <div class="clearfix" id="control-panel">
+            <input type="submit" name="Button" value="Enviar"/>
+            <input type="reset" name="resetBtn">
+        </div>
+</body>
+
+</html>
