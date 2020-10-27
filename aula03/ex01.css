@@ -1,0 +1,33 @@
+div {
+    border: 1px black solid;
+}
+
+#menu {
+    height: 40px;
+
+}
+
+.default-width {
+    width: 960px;
+    margin: 0 auto;
+}
+
+#mid-container {
+    min-height: 480px;
+}
+
+#content {
+    width: 716px;
+    min-height: 480px;
+    float: left;
+}
+
+#ads {
+    width: 240px;
+    float: right;
+    min-height: 480px;
+}
+
+#footer {
+    height: 30px;
+}

@@ -78,13 +78,13 @@
                 <option value="3">Mestrado Integrade em Engenharia Eletrónica e Telecomunincações</option>
             </select><br>
 
-            <label>Nome:</label>
+            <label for="Nome">Nome:</label>
             <input type="text" name="FirstName" value="Joaquim" placeholder="Nome" /><br>
 
-            <label>Sobrenome: </label>
+            <label for="Sobrenome">Sobrenome: </label>
             <input type="text" name="LastName" placeholder="Sobrenome" /><br>
 
-            <label>Palavra-Passe: </label>
+            <label for="password">Palavra-Passe: </label>
             <input type="password" name="Password" placeholder="Digite a palavra-passe" /><br>
         </fieldset>
 
@@ -101,11 +101,11 @@
             <fieldset id="transporte">
                 <legend>Meios de Transporte</legend>
                 <input type="checkbox" id="bicicleta" name="vehicle" value="Bicicleta">
-                <label>Bicicleta</label><br>
+                <label for="Bicicleta">Bicicleta</label><br>
                 <input type="checkbox" id="Carro" name="vehicle" value="Carro">
-                <label>Carro</label><br>
+                <label for="Carro">Carro</label><br>
                 <input type="checkbox" id="Comboio" name="vehicle" value="Comboio">
-                <label>Comboio</label>
+                <label for="Comboio">Comboio</label>
             </fieldset>
 
             
@@ -123,7 +123,9 @@
             </fieldset>
         </div>
         <div class="clearfix" id="control-panel">
+            <label for="submit"></label>
             <input type="submit" name="Button" value="Enviar"/>
+            <label for="reset"></label>
             <input type="reset" name="resetBtn">
         </div>
 </body>
