@@ -92,6 +92,7 @@ li a.active:hover {
 ul {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
+
 #content p {
     text-align: justify;
     margin: 0 5px;
@@ -102,7 +103,8 @@ ul {
     padding-left: 20px;
 }
 
-#content h1,h2 {
+#content h1,
+h2 {
     text-transform: uppercase;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
@@ -113,17 +115,18 @@ ul {
     width: 100;
 }
 
-#sub-content  p {
+#sub-content p {
     text-align: justify;
     margin: 0 5px;
 }
 
-#sub-content  p::first-letter {
+#sub-content p::first-letter {
     font-size: 2em;
     padding-left: 20px;
 }
 
-#sub-content  h1,h2 {
+#sub-content h1,
+h2 {
     text-transform: uppercase;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
