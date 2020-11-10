@@ -1,6 +1,7 @@
 /**
- * A minha forma onde existe um contentor onde eles só podem ser gerados dentro desse contentor
+ * Método alternativo onde a zona de gerar é absoluta (quadro todo)
  */
+
 const divs = ["azul","vermelho", "verde","amarelo"]; //Array com o nome dos blocos utilizados no programa, escalável
 
 function setCurrentDiv() {
@@ -23,13 +24,8 @@ function scramble() {                  //MESMA COISA QUE
     });                                // randomize("verde");
 }                                      //randomize ("amarelo");
 
-
-
-
 function randomize(selDiv) {
     var divRand = document.getElementById(selDiv);
-    divRand.width = Math.floor(Math.random() * 500) + 'px';
-    divRand.height = Math.floor(Math.random() * 250) + 'px';
-    divRand.style.top = Math.floor(Math.random() * 450) + 'px';
-    divRand.style.left = Math.floor(Math.random() * 500) + 'px';
+    divRand.style.top = Math.floor(Math.random() * (window.innerHeight - document.getElementById("header").offsetHeight - 50) + document.getElementById("header").offsetHeight) + 'px';
+    divRand.style.left = Math.floor(Math.random() * (window.innerWidth - document.getElementById("info").offsetWidth - 50) + document.getElementById("info").offsetHeight) + 'px';
 }
