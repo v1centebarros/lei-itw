@@ -1,0 +1,86 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Calculadora ITW</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="calculadora.css" rel="stylesheet" />
+</head>
+
+<body>
+    <div class="container">
+        <div class="border-bottom pt-4 pb-2 mb-3">
+            <h2>Calculadora</h2>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-lg-6 col-xs-12 justify-content-center">
+                <div class="card">
+                    <div class="card-header">
+                        <h2 id="res">0</h2>
+                    </div>
+                    <div class="card-body">
+                        <div class="form-row mb-1">
+                            <div class="col-sm-3"><input class="form-control btn btn-secondary btn-lg tecla" value="1"
+                                    onclick="addNumber()" /></div>
+                            <div class="col-sm-3"><input class="form-control btn btn-secondary btn-lg tecla" value="2"
+                                    onclick="addNumber()" /></div>
+                            <div class="col-sm-3"><input class="form-control btn btn-secondary btn-lg tecla" value="3"
+                                    onclick="addNumber()" /></div>
+                            <div class="col-sm-3"><input class="form-control btn btn-secondary btn-lg tecla" value="+"
+                                    onclick="addOperation()" /></div>
+                        </div>
+                        <div class="form-row mb-1">
+                            <div class="col-sm-3"><input class="form-control btn btn-secondary btn-lg tecla" value="4"
+                                    onclick="addNumber()" /></div>
+                            <div class="col-sm-3"><input class="form-control btn btn-secondary btn-lg tecla" value="5"
+                                    onclick="addNumber()" /></div>
+                            <div class="col-sm-3"><input class="form-control btn btn-secondary btn-lg tecla" value="6"
+                                    onclick="addNumber()" /></div>
+                            <div class="col-sm-3"><input class="form-control btn btn-secondary btn-lg tecla" value="-"
+                                    onclick="addOperation()" /></div>
+
+                        </div>
+                        <div class="form-row mb-1">
+                            <div class="col-sm-3"><input class="form-control btn btn-secondary btn-lg tecla" value="7"
+                                    onclick="addNumber()" /></div>
+                            <div class="col-sm-3"><input class="form-control btn btn-secondary btn-lg tecla" value="8"
+                                    onclick="addNumber()" /></div>
+                            <div class="col-sm-3"><input class="form-control btn btn-secondary btn-lg tecla" value="9"
+                                    onclick="addNumber()" /></div>
+                            <div class="col-sm-3"><input class="form-control btn btn-secondary btn-lg tecla" value="*"
+                                    onclick="addOperation()" /></div>
+
+                        </div>
+                        <div class="form-row">
+                            <div class="col-sm-3"><input class="form-control btn tecla btn-danger btn-lg" value="C"
+                                    onclick="clearResult()" /></div>
+                            <div class="col-sm-3"><input class="form-control btn btn-secondary btn-lg tecla" value="0"
+                                    onclick="addNumber()" /></div>
+                            <div class="col-sm-3"><input class="form-control btn btn-primary btn-lg tecla" value="="
+                                    onclick="calculate()" /></div>
+                            <div class="col-sm-3"><input class="form-control btn btn-secondary btn-lg tecla" value="/"
+                                    onclick="addOperation()" /></div>
+
+                        </div>
+                    </div>
+                    <div class="card-footer"><small>&copy; ITW 2019-20 - Calculadora</small></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+    </script>
+    <script src="./calculadora.js"></script>
+</body>
+
+</html>
