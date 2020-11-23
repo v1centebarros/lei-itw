@@ -1,0 +1,1 @@
+Esta aula foi a aula de Exame prático. Esta foi uma das versões que apareceu 
